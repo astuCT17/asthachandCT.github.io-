@@ -36,7 +36,7 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li ><a href="index.html">Home</a></li>
 
           
           <li><a href="KU.html"> About KU</a></li>
@@ -131,9 +131,13 @@ var HighwayMapGroup = new ol.layer.Group({
     var layerSwitcher = new ol.control.LayerSwitcher ({
         // tipLable: "Legend",
         reverse: true,
+        collapsed:false,
+        startActive:true,
+        activationMode:"click",
           groupSelectStyle:'group',
         
     });
     map.addControl(layerSwitcher);
+ 
 
 </script>

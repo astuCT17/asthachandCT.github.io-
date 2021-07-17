@@ -59,7 +59,9 @@ img {vertical-align: middle;}
 }
 
  
-
+.active1 {
+  background-color: #717171;
+}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -85,8 +87,7 @@ img {vertical-align: middle;}
 </style>
 </head>
 <body>
-
-
+  <br><br><br>
 
 <div class="slideshow-container">
 
@@ -153,11 +154,11 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" active1", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  dots[slideIndex-1].className += " active1";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 </script>
 
@@ -251,19 +252,17 @@ function showSlides() {
                                   It is committed to develop leaders in professional areas through quality education.</p>
                                   
                                             <div class="row">
-                                              <div class="col-md-offset-2 col-md-10 col-sm-12">
+                                              <div class="col-md-offset-2 col-md-12 col-sm-12">
                                                    <div class="wow fadeInUp color-black service-thumb" data-wow-delay="0.4s">
                           
                                                         <h2>Bachelor of Geomatic Engineering - Kathmandu UnIversity</h2>
-                                                        <p class="color-black" class="wow fadeInUp">Geomatics (Surveying) Engineering Technology provides training in the collection, analysis, storage,
+                                                        <p class="text-justify color-black" class="wow fadeInUp">Geomatics (Surveying) Engineering Technology provides training in the collection, analysis, storage,
                                                         distribution and application of spatial or three-dimensional data used in land development. It is is a modern discipline, which integrates
                                                         acquisition, modeling, analysis, and management of spatially referenced data, i.e. data identified according to their locations.Based on the 
                                                         scientific framework of geodesy, it uses terrestrial, marine, airborne, and satellite-based sensors to acquire spatial and other data.
                                                         This program is running under the memorandum of understanding between school of Engineering Kathmandu University and Land Management Training Center (LMTC),
-                                                        Dhulikhel with the decision of Ministry of Land Reforms,Government of Nepal. Under this agreement Ministry of Land Reform will provide financial assistance to run the program.</p>
-                          
-                                                       
-                                                        <p class="color-black" class="wow fadeInUp">To know more about this program,<a target="_blank" href="http://ku.edu.np/dcge/">click here.</a></p>
+                                                        Dhulikhel with the decision of Ministry of Land Reforms,Government of Nepal. Under this agreement Ministry of Land Reform will provide financial assistance to run the program.                                                 
+                                                        To know more about this program, <a class="text-primary" target="_blank" href="http://ku.edu.np/dcge/">click here.</a></p>
                                                    </div>
                           
                                               </div>
